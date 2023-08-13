@@ -29,6 +29,7 @@ Number of balls
 Velocities
 Blocks configuration
 And more...
+
 To specify the levels you want to play in the game, you can easily use the following command:
 
 `ant -Dargs="levels numbers" run`
