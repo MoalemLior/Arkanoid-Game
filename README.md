@@ -18,29 +18,40 @@ if you want to specify the levels of the game it can be done easilly using this 
 `ant -Dargs="levels numbers" run`
 
 # Creating and Editing Levels
-This is a special arkanoid game - You get to choose which levels will be played and their order!
-In order to add or change the levels order in the game, you don't have to learn to code! 
-Inside the [definitions folder](./resources/definitions) you will find simple txt files. The [default levels](./resources/Default_Levels.txt) file defines each level's charateristics in the game. By writing in this file you can edit the design of the game. Without coding, you can change anything from the name of the level, the images, the number of balls, the velocities, the blocks, etc.
 
-Each level has it own charateristics like name m background animation, the number of balls, the velocities, the blocks, etc.
-if you want to specify the levels of the game it can be done easilly using this command:
+This is a special arkanoid game - You get to choose which levels will be played and their order!
+The best part is, you don't need to learn how to code to make these changes!
+
+Each level in the game has its own unique characteristics, including:
+Name
+Background animation
+Number of balls
+Velocities
+Blocks configuration
+And more...
+To specify the levels you want to play in the game, you can easily use the following command:
 
 `ant -Dargs="levels numbers" run`
 
-for example, this command will run the levels 1, 1 again, 3 and 2, by this order:
+For example, to play levels 1, 1 again, 3, and 2 in that order, you would use the following command:
 
 `ant -Dargs="1 1 3 2" run`
 
 # GamePlay
 
+Use the arrow keys on your keyboard to control the paddle.
+The paddle has 5 areas that influence the angle at which the ball moves.
+Each block you destroy will earn you 5 points, and completing each level rewards you with 100 points.
+Pause the game using the p key on your keyboard, and resume by pressing the space key.
 To control the paddel use the arraow keys on your keyboard.
-Note that the paddel has 5 areas which affect the ball moving angle.
-Each block will earn you 5 points and each level completed 100 points.
-You can pause the game using the `p` key on your keybard, and continue using the `space` key.
 
-You win if you finish all levels.
-You lose if you run out of balls during a level.
-Either way, you'll get a message of how many points you collected during the game!
+# Winning or Losing
+
+You win the game by successfully completing all levels.
+You lose if you exhaust all available balls during a level.
+Regardless of the outcome, you'll receive a message indicating how many points you've collected throughout the game.
+
+
 
 ![level1](./screenshots/level1.png)
 ![level2](./screenshots/level2.png)
